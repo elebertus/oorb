@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # A script used within CI to check if the results of lsl have changed.
 
 import sys
@@ -23,5 +23,3 @@ for i in range(len(f1_results)):
         pass
     else:
         assert(abs(float(f1_results[i]) - float(f2_results[i])) < eps)
-
-
