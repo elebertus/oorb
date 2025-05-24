@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Prefer '$PYTHON', or 'python3', or 'python', in that order
-PYTHON=${PYTHON:-python3}
+PYTHON=${PYTHON:-/usr/bin/python3}
 if ! command -v $PYTHON >/dev/null 2>&1; then
 	PYTHON=python
 fi
